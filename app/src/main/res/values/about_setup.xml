@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="ExtraTranslation,MissingTranslation">
+    <string-array name="credits_photos" formatted="false" tools:ignore="TypographyDashes">
+        <item>https://www.t-ryder.de/downloads/ryder.png</item>
+    </string-array>
+
+    <string-array name="credits_titles">
+        <item>t-ryder</item>
+    </string-array>
+
+    <string-array name="credits_descriptions">
+        <item>I am a graphic artist and computer/smartphone enthusiast living in Rhineland-Palatinate in Germany.</item>
+    </string-array>
+
+    <string-array name="credits_buttons">
+        <item>Website|Donation</item>
+    </string-array>
+
+    <string-array name="credits_links">
+        <item>https://t-ryder.de|https://paypal.me/tryder</item>
+    </string-array>
+</resources>
