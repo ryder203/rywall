@@ -1,14 +1,14 @@
 # Features:
 
-• this app is and will stay free
-• comes with no ads at all
-• free downloadable JPG wallpapers 3840x1644 pixels
-• collections sorted by themes
-• use the app to apply the wallpapers or the system tool
-• english and german translations
-• you may donate via payPal if you wish to
-• new wallpapers / backgrounds will be added weekly
-• more than 100 wallpapers and counting
+* this app is and will stay free
+* comes with no ads at all
+* free downloadable JPG wallpapers 3840x1644 pixels
+* collections sorted by themes
+* use the app to apply the wallpapers or the system tool
+* english and german translations
+* you may donate via payPal if you wish to
+* new wallpapers / backgrounds will be added weekly
+* more than 100 wallpapers and counting
 
 
 # Developed by
