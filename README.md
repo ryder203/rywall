@@ -10,6 +10,10 @@
 * new wallpapers / backgrounds will be added weekly
 * more than 100 wallpapers and counting
 
+# Maintained by
+
+### [t-ryder](https://t-ryder.de/)
+
 
 # Developed by
 
