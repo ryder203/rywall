@@ -2,8 +2,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="de.t_ryder.rywall.app">
 
-    <!-- Permission required for donations. Remove it if you don't use it -->
-    <uses-permission android:name="com.android.vending.BILLING" />
 
     <application
         android:name="de.t_ryder.rywall.app.MyApplication"

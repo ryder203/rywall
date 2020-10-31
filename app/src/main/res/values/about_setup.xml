@@ -13,10 +13,10 @@
     </string-array>
 
     <string-array name="credits_buttons">
-        <item>Website|Donation</item>
+        <item>Website|Contribute</item>
     </string-array>
 
     <string-array name="credits_links">
-        <item>https://t-ryder.de|https://paypal.me/tryder</item>
+        <item>https://t-ryder.de|https://www.t-ryder.de/contribute/</item>
     </string-array>
 </resources>
