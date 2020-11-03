@@ -13,10 +13,10 @@
     </string-array>
 
     <string-array name="credits_buttons">
-        <item>Website|Contribute</item>
+        <item>Telegram|Website</item>
     </string-array>
 
     <string-array name="credits_links">
-        <item>https://t-ryder.de|https://www.t-ryder.de/contribute/</item>
+        <item>https://telegram.me/ryder203|https://www.t-ryder.de</item>
     </string-array>
 </resources>
