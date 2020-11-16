@@ -8,7 +8,7 @@
 * english and german translations
 * you may donate via payPal if you wish to
 * new wallpapers / backgrounds will be added weekly
-* more than 100 wallpapers and counting
+* more than 200 wallpapers and counting
 
 # Maintained by
 
