@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <version title="v1.0.4" />
+    <item text="Minor fixes" />
     <version title="v1.0.3" />
-    <item text="Then I had to remove the direct link to my page where you can donate. Thank you Google!" />
+    <item text="Website donation link removed due to Google policy" />
     <version title="v1.0.2" />
-    <item text="First I had to remove my direct donation link due to Google policy." />
+    <item text="PayPal donation link removed due to Google policy" />
     <version title="v1.0.1" />
     <item text="Little cleanup" />
     <version title="v1.0.0" />
