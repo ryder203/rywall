@@ -24,7 +24,7 @@ object Libs {
     private const val fragmentKtx = "androidx.fragment:fragment-ktx:${Versions.fragmentKtx}"
 
     // ViewModel and LiveData
-    private const val lifecycle = "androidx.lifecycle:lifecycle-extensions:${Versions.lifecycle}"
+    private const val lifecycle = "androidx.lifecycle:lifecycle-extensions:${Versions.lifecycleExt}"
     private const val livedataKtx =
         "androidx.lifecycle:lifecycle-livedata-ktx:${Versions.lifecycle}"
     private const val viewmodelKtx =
@@ -70,7 +70,8 @@ object Libs {
         "com.github.javiersantos:PiracyChecker:${Versions.licenseChecker}"
 
     // In-App Billing
-    private const val inAppBilling = "com.android.billingclient:billing:${Versions.inAppBilling}"
+    private const val inAppBilling =
+        "com.android.billingclient:billing-ktx:${Versions.inAppBilling}"
 
     // MultiDex
     private const val multidex = "androidx.multidex:multidex:${Versions.multidex}"

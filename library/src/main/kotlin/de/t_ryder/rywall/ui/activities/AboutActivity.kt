@@ -86,7 +86,6 @@ open class AboutActivity : BaseThemedActivity<Preferences>() {
                 "https://jahir.dev/assets/images/me/me.jpg",
                 arrayListOf(
                     "Website" to "https://jahir.dev",
-                    "Twitter" to "https://twitter.com/jahirfiquitiva",
                     "GitHub" to "https://github.com/jahirfiquitiva"
                 )
             )
@@ -97,20 +96,17 @@ open class AboutActivity : BaseThemedActivity<Preferences>() {
                     "Eduardo Pratti",
                     string(R.string.eduardo_description),
                     "https://pbs.twimg.com/profile_images/560688750247051264/seXz0Y25_400x400.jpeg",
-                    arrayListOf(
-                        "Website" to "https://pratti.design/",
-                        "Twitter" to "https://twitter.com/edpratti"
-                    )
+                    arrayListOf("Website" to "https://pratti.design/")
                 )
             )
             items.add(
                 AboutItem(
-                    "Lumiq Creative",
-                    string(R.string.lumiq_description),
-                    "https://raw.githubusercontent.com/lumiqcreative/brand/master/q-mark/q-mark-on-purple.png",
+                    "Patryk Michalik",
+                    string(R.string.patryk_description),
+                    "https://raw.githubusercontent.com/patrykmichalik/brand/master/logo-on-indigo.png",
                     arrayListOf(
-                        "Website" to "https://lumiqcreative.com/",
-                        "Twitter" to "https://twitter.com/lumiqcreative"
+                        "Website" to "https://patrykmichalik.com",
+                        "Twitter" to "https://twitter.com/patrykmichalik_"
                     )
                 )
             )

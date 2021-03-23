@@ -5,10 +5,10 @@
 * free downloadable JPG wallpapers 3840x1644 pixels
 * collections sorted by themes
 * use the app to apply the wallpapers or the system tool
-* english and german translations
+* multilanguage
 * you may donate via payPal if you wish to
 * new wallpapers / backgrounds will be added weekly
-* more than 200 wallpapers and counting
+* more than 300 wallpapers and counting
 
 # Maintained by
 

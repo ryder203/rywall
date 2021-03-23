@@ -14,6 +14,7 @@ import androidx.appcompat.widget.AppCompatImageView
 import com.simplecityapps.recyclerview_fastscroll.views.FastScrollRecyclerView
 import de.t_ryder.rywall.R
 import de.t_ryder.rywall.extensions.context.drawable
+import de.t_ryder.rywall.extensions.context.isFirstRun
 import de.t_ryder.rywall.extensions.context.preferences
 import de.t_ryder.rywall.extensions.context.string
 import de.t_ryder.rywall.extensions.views.gone
@@ -31,6 +32,8 @@ open class StatefulRecyclerView @JvmOverloads constructor(
 ) : FastScrollRecyclerView(context, attrs, defStyleAttr) {
 
     var stateDrawableModifier: StateDrawableModifier? = null
+
+    var allowFirstRunCheck: Boolean = false
 
     var loading: Boolean = true
         set(value) {
@@ -161,7 +164,7 @@ open class StatefulRecyclerView @JvmOverloads constructor(
         state = when {
             loading -> State.LOADING
             (adapter?.itemCount ?: 0) > 0 -> State.NORMAL
-            else -> State.EMPTY
+            else -> if (context.isFirstRun && allowFirstRunCheck) State.LOADING else State.EMPTY
         }
     }
 

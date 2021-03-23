@@ -1,3 +1,5 @@
+@file:Suppress("DEPRECATION")
+
 package de.t_ryder.rywall.extensions.context
 
 import android.annotation.SuppressLint

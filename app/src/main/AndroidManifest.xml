@@ -2,7 +2,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="de.t_ryder.rywall.app">
 
-
     <application
         android:name="de.t_ryder.rywall.app.MyApplication"
         android:allowBackup="true"

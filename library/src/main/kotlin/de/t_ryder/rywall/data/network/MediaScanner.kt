@@ -4,10 +4,9 @@ import android.content.Context
 import android.content.Intent
 import android.media.MediaScannerConnection
 import android.net.Uri
+import de.t_ryder.rywall.extensions.resources.getMimeType
 import de.t_ryder.rywall.extensions.resources.getUri
-import de.t_ryder.rywall.extensions.resources.hasContent
 import java.io.File
-import java.net.URLConnection
 
 internal object MediaScanner {
     private fun broadcastMediaMounted(context: Context?, uri: Uri?) {
@@ -35,11 +34,9 @@ internal object MediaScanner {
         try {
             val file: File? = File(path)
             val fileUri: Uri? = file?.getUri(context) ?: Uri.fromFile(file)
-            var mimeType = URLConnection.guessContentTypeFromName(file?.name).orEmpty()
-            if (!mimeType.hasContent()) mimeType = "image/*"
             try {
                 MediaScannerConnection.scanFile(
-                    context, arrayOf(path), arrayOf(mimeType)
+                    context, arrayOf(path), arrayOf(file.getMimeType("image/*"))
                 ) { _, uri -> sendBroadcasts(context, uri) }
             } catch (e: Exception) {
                 sendBroadcasts(context, fileUri)

@@ -10,6 +10,7 @@ import de.t_ryder.rywall.data.listeners.BillingProcessesListener
 import de.t_ryder.rywall.data.models.CleanSkuDetails
 import de.t_ryder.rywall.data.models.DetailedPurchaseRecord
 import de.t_ryder.rywall.data.viewmodels.BillingViewModel
+import de.t_ryder.rywall.extensions.context.firstInstallTime
 import de.t_ryder.rywall.extensions.context.getAppName
 import de.t_ryder.rywall.extensions.context.string
 import de.t_ryder.rywall.extensions.context.stringArray
@@ -42,6 +43,13 @@ abstract class BaseBillingActivity<out P : Preferences> : BaseLicenseCheckerActi
             billingViewModel.billingProcessesListener = this
             billingViewModel.observe(this)
             billingViewModel.initialize()
+        }
+    }
+
+    override fun onResume() {
+        super.onResume()
+        if (preferences.isFirstRun && firstInstallTime > 10000) {
+            preferences.isFirstRun = false
         }
     }
 
@@ -84,14 +92,19 @@ abstract class BaseBillingActivity<out P : Preferences> : BaseLicenseCheckerActi
         dismissDialogs()
         purchasesDialog = mdDialog {
             title(R.string.donate)
-            singleChoiceItems(skuDetailsList, 0) { _, which ->
-                billingViewModel.launchBillingFlow(
-                    this@BaseBillingActivity,
-                    skuDetailsList[which].originalDetails
-                )
-            }
+            singleChoiceItems(skuDetailsList, 0)
             negativeButton(android.R.string.cancel)
-            positiveButton(R.string.donate)
+            positiveButton(R.string.donate) { dialog ->
+                val listView = (dialog as? AlertDialog)?.listView
+                if ((listView?.checkedItemCount ?: 0) > 0) {
+                    val checkedItemPosition = listView?.checkedItemPosition ?: -1
+                    billingViewModel.launchBillingFlow(
+                        this@BaseBillingActivity,
+                        skuDetailsList[checkedItemPosition].originalDetails
+                    )
+                }
+                dialog.dismiss()
+            }
         }
         purchasesDialog?.show()
     }

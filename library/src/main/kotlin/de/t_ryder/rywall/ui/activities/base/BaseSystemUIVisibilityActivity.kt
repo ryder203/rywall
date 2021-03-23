@@ -1,3 +1,5 @@
+@file:Suppress("DEPRECATION")
+
 package de.t_ryder.rywall.ui.activities.base
 
 import android.os.Build
